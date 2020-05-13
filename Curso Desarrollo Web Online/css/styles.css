@@ -1,0 +1,494 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?fynqng');
+    src:  url('../fonts/icomoon.eot?fynqng#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?fynqng') format('truetype'),
+      url('../fonts/icomoon.woff?fynqng') format('woff'),
+      url('../fonts/icomoon.svg?fynqng#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+  }
+  
+/* .............................................................. */
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+h1{
+    line-height: 1.5;
+    font-size: 40px;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+}
+
+h1 strong{
+    color: #026fff;
+}
+
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero{
+    height: 300px;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero_image{
+    object-fit: cover;
+}
+
+.portfolio{
+    background: #fafafa;
+    padding: 20px;
+}
+
+.project{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project_title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+
+.project_course, 
+.project_date, 
+.project_url{
+    margin: 10px 0;
+}
+
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.project_description{
+    font-size: 20px;
+}
+
+.project_details{
+    width: 50%;
+}
+
+.project_imageContainer{
+    width: 50%;
+}
+
+.project_imageContainer img{
+    max-width: 100%;
+}
+
+.header{
+    height: 70px;
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ol, ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
+.menu{
+    height: inherit;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+.event_list_title{
+    margin-left: 20px;
+}
+
+.event_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event{
+    margin: 1%;
+    width: 48%;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #f4fbff;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event_details{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event_description{
+    text-align: left;
+}
+
+.event_url{
+    border: 1px solid #056fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form_email input{
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form_email button{
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.form_email h3{
+    font-family: 'Source Sans Pro',
+}
+
+.social_link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social_link.twitter{
+    background-image: url('../images/twitter.svg');
+}
+
+.social_link.facebook{
+    background-image: url('../images/facebook.svg');
+}
+
+.social_link.github{
+    background-image: url('../images/github.svg');
+}
+
+.social_link.instagram{
+    background-image: url('../images/instagram.svg');
+}
+
+.footer{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer img{
+    vertical-align: middle;
+}
+
+.footer a{
+    color: white;
+}
+
+.container{
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+.burger-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: white;
+}
+
+/* Desktop First */
+
+@media screen and (max-width: 1023px){
+    .container{
+        padding: 0 1em;
+    }
+
+    .hero{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    .hero_image{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    h1{
+        font-size: 2em;
+        z-index: 2;
+    }
+
+    .portfolio{
+        padding: 0;
+    }
+
+    .event_list_title{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 767px){
+    h2{
+        font-size: 1.2em;
+        margin: 1em 0;
+    }
+
+    .burger-button{
+        display: block;
+    }
+
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol{
+        display: block;
+    }
+    .header ol li{
+        height: 60px;
+    }
+    .header a{
+        justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        margin-bottom: .5em;
+    }
+    .header .logo{
+        text-align: center;
+    }
+
+    .menu{
+        position: fixed;
+        background-color: rgba(5, 111, 255, .9);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        /* height: 100vh; */
+        bottom: 0;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .menu ol{
+        align-self: center;
+    }
+    .menu.is-active{
+        left: 0;
+    }
+
+    .project{
+        display: block;
+    }
+    .project_imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project_details{
+        width: auto;
+        font-size: 16px;
+    }
+    .project_title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project_url{
+        font-size: 1em;
+    }
+    .project_course{
+        font-size: .7em;
+    }
+    .project_date{
+        font-size: 1em;
+    }
+    .project_description{
+        font-size: 1.1em;
+    }
+    .project_course, .project_url, .project_date{
+        margin: .3em 0;
+    }
+
+    .event_list{
+        display: block;
+    }
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img{
+        width: 100%;
+        max-height: 250px;
+        object-position: 25% 25%;
+    }
+}
+@media screen and (max-width: 480px){
+    .h1{
+        font-size: 1.5em;
+    }
+    
+    .project_details{
+        font-size: 14px;
+    }
+    
+    .event_details{
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+
+    .contact{
+        height: auto;
+        padding: 1em 0;
+        display: block;
+        text-align: center;
+    }
+    .form_email button{
+        margin: 1em auto;
+    }
+    .form_email h3{
+        margin-top: 0;
+    }
+
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+
+}
+@media screen and (max-width: 320px){
+    h1{
+        font-size: 1.2em;
+        /* background: rgba(0, 0, 0, .5); */
+    }
+    .hero{
+        padding: 2em 1em;
+    }
+    .social_link{
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
+    }
+}
