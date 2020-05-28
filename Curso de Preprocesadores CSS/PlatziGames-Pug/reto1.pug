@@ -1,0 +1,13 @@
+extends componentes/plantilla.pug
+block contenidos
+    section.container
+        .aside_left
+            h2 Menú
+            ul
+                each enlace in enlaces
+                    li=enlace
+        .aside_rigth
+            h2 #{titulos[0]}
+            p=lorem
+            p=lorem
+            a.boton Ver más
