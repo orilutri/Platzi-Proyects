@@ -1,0 +1,77 @@
+.contenedor--home {
+    width: 100%;
+    height: auto;
+    //position: relative;
+    display: flex;
+    flex-direction: column;
+    //flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    //overflow: hidden;
+    @include media(desktop-s) {
+        height: 1200px;
+        width: 1300px;
+        margin: 0 auto;
+        @include display-grid;
+        @include grid-template-columns(1fr grid-repeat(3));
+        @include grid-template-rows(1fr grid-repeat(3));
+    }
+}
+
+.caja--grande {
+    @include media(desktop-s) {
+        @include grid-column(1, 4);
+        @include grid-row(1, 3);
+    }
+}
+
+.banner--homepage {
+    display: none;
+    @include media(desktop-s) {
+        @include grid-column(4, 5);
+        @include grid-row(2, 4);
+    }
+}
+
+.sidebar--listado {
+    display: none;
+    @include media(desktop-s) {
+        @include grid-column(1, 2);
+        @include grid-row(3, 5);
+    }
+}
+
+.caja-zelda {
+    @include media(desktop-s) {
+        @include grid-column(2, 4);
+        @include grid-row(3, 4);
+    }
+}
+
+.caja-fortnite {
+    @include media(desktop-s) {
+        @include grid-column(3, 4);
+        @include grid-row(4, 5);
+    }
+}
+
+.caja-xbox {
+    @include media(desktop-s) {
+        @include grid-column(4, 5);
+        @include grid-row(4, 4);
+    }
+}
+
+.caja-ff {
+    @include media(desktop-s) {
+        @include grid-column(2, 3);
+        @include grid-row(4, 5);
+    }
+}
+
+.caja-rdr2 {
+    @include media(desktop-s) {
+        @include grid-column(4, 5);
+        @include grid-row(1, 2);
+    }
+}

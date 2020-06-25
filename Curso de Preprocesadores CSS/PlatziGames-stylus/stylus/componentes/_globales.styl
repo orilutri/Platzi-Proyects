@@ -1,0 +1,44 @@
+//variables
+Fuente1 = 'Lato', sans-serif
+Fuente2 = 'Oswald', sans-serif
+color-primario = #333333
+color-secundario = #8841DA
+color-claro = #FFFFFF
+
+//mixins
+contenedor()
+    display: flex
+    width: 96%
+    margin: 0 auto
+    padding: 30px 0
+
+caja-sombra()
+    background-color: color-claro
+    box-shadow: 0 20px 33px 0 rgba(0,0,0,0.20)
+
+
+//funciones
+opacidad(color,cantidad)
+    alpha(color, cantidad)
+
+
+for header in 3 2 1
+    h{header} //declaro los selectores que van a ser h1 h2 h3
+        font-size: 35px - (5 * header)
+        margin: 0
+
+titulos(fuente)
+    if fuente == Fuente1
+        font-family: Fuente1
+    else 
+        font-family: Fuente2
+        font-weight: 600
+        text-transform: uppercase    
+
+* 
+    box-sizing: border-box
+
+body
+    margin: 0
+    color: color-primario
+    titulos(Fuente1)
